@@ -35,6 +35,8 @@
             this.questionLabel = new System.Windows.Forms.Label();
             this.storyLabel = new System.Windows.Forms.Label();
             this.thirdOptionButton = new System.Windows.Forms.Button();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // optionLabel
@@ -115,12 +117,22 @@
             this.thirdOptionButton.Visible = false;
             this.thirdOptionButton.Click += new System.EventHandler(this.thirdOptionButton_Click);
             // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(224, 144);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(175, 119);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 6;
+            this.pictureBox.TabStop = false;
+            // 
             // TheInterestingDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(446, 450);
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.thirdOptionButton);
             this.Controls.Add(this.storyLabel);
             this.Controls.Add(this.questionLabel);
@@ -130,6 +142,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TheInterestingDay";
             this.Text = "The Interesting Day";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,6 +156,7 @@
         private System.Windows.Forms.Label questionLabel;
         private System.Windows.Forms.Label storyLabel;
         private System.Windows.Forms.Button thirdOptionButton;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
 
